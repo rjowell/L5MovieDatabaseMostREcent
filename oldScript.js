@@ -18,22 +18,9 @@ $(
           //$("#movie-details").append("Goodbye World");
           for(var x = 0;x < movieData.length; x++)
             {
-              
-              var styleString="";
-              
-              if(x % 2 == 0)
-              {
-                styleString = "style='background-color: red;'";
-              }
-              else
-              {
-                styleString = "";
-              }
-              
-              
               //<tr><td>Star Wars</td><td>1977</td><td>Poster Here</td></tr>
              // $("#list-view > table > tbody").append("<tr><td>"+movieData[x]["Title"]+"</td><td>"+movieData[x]["Year"]+"</td><td>"+movieData[x]["Poster"]+"</td></tr>");
- $("#list-view > table > tbody").append("<tr "+styleString+"><td>"+movieData[x]["Title"]+"</td><td>"+movieData[x]["Year"]+"</td><td>"+"<img height=150 src='"+movieData[x]["Poster"]+"'/>"+"</td></tr>");
+ $("#list-view > table > tbody").append("<tr><td>"+movieData[x]["Title"]+"</td><td>"+movieData[x]["Year"]+"</td><td>"+"<img height=150 src='"+movieData[x]["Poster"]+"'/>"+"</td></tr>");
               
               //innerHTML
               
